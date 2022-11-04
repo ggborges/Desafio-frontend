@@ -1,0 +1,39 @@
+@import url("https://fontlibrary.org//face/rawline");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+    font-family: 'RawlineRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+label {
+    font-family: 'RawlineRegular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #0c0c0c;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+    margin: 5% 25% 5% 25%;
+    padding: 5%;
+
+    .btns {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10%;
+    }
+}

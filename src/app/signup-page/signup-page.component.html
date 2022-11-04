@@ -1,1 +1,44 @@
-<p>signup-page works!</p>
+<div class="title">
+    <h1>Cadastro do Usuário</h1>
+</div>
+
+<section class="form-signup">
+    <label for="user-name">Nome de usuário</label>
+    <input type="text" id="user-name" name="user-name" value="Escolha o seu nome de usuário">
+
+    <label>Email</label>
+    <input type="email" name="email" value="Digite o seu email">
+
+    <label>Confirme o seu Email</label>
+    <input type="email" name="confirm-email" value="Digite novamente o seu email">
+
+    <label>Instituição</label>
+    <input type="text" name="instituicao" value="Digite o nome da sua instituição">
+    <!-- Fazer input de select para Cargo -->
+    <label for="cargos">Cargo</label>
+    <select id="cargos">
+        <option value="" selected disabled hidden>Selecione...</option>
+        <option value="Estagiário">Estagiário</option>
+        <option value="Júnior">Júnior</option>
+        <option value="Sênior">Sênior</option>
+        <option value="Pleno">Pleno</option>
+    </select>
+
+    <label>Senha</label>
+    <input type="text" name="senha" value="Escolha uma senha">
+
+    <label>Confirme a sua Senha</label>
+    <input type="text" name="confirme-senha" value="Digite novamente a senha escolhida">
+    
+    <div class="check">
+        <input type="checkbox" id="check" name="termos">
+        <label for="check">Aceito o <a href="">Termos de Uso e Política de Privacidade</a></label>    
+    </div>
+    
+    
+    <div class="btns">
+        <button type="button" class="cancelar">Cancelar</button>
+        <button type="submit" class="continuar">Continuar</button>    
+    </div>
+    
+</section>
