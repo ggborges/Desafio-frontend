@@ -1,0 +1,81 @@
+@import url("https://fontlibrary.org//face/rawline");
+
+:root {
+    --bluetext: #1351B4;
+    --graytext: #555555;
+}
+
+body {
+    display: flex;
+}
+
+.nav {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    box-shadow: 0 4px 2px -2px gray;
+    padding-top: 1%;
+    
+    
+
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1%;
+        padding-right: 5%;
+    
+        .icon-nav {
+            width: 4%;
+            height: 4%;
+            margin-left: 4%;
+        }
+        
+        .links-acesso {
+            display: flex;
+            gap: 1em;
+        }
+    }
+    
+    .nav-bottom {
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 1% 5% 0% 5%;
+    
+        .icon-and-title {
+            
+            .title{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-;
+
+                .title-header {
+                    font-family: 'RawlineRegular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24.19px;
+                    line-height: 33px;
+                    color: var(--bluetext);
+                    
+                }
+        
+                .subtitle-header {
+                    font-family: 'RawlineRegular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: var(--graytext)
+                }
+            }
+
+        }
+    }
+    
+    
+    
+}
+
