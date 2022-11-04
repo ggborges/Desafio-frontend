@@ -12,29 +12,81 @@ h1 {
     color: #272626;
 
     padding-left: 5%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 .login-area {
 
     display: flex;
     justify-content: space-between;
+    
+    
 
-    img {
-        padding-left: 4%;
+    .image {
+        padding-left: 5%;
         padding-top: 3%;
     }
 
     .form-login {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        
-        padding-right: 5%;
+        justify-content: space-around;
+        margin: 3% 5% 10% 7%;
+        padding: 5% 10% 5% 10%;
+        box-shadow: 2px 4px 2px -2px gray;
 
+        p {
+            font-family: 'RawlineRegular';
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .text-login {
+            font-size: 20px;
+        }
+
+        .name-field {
+            display: flex;
+            flex-direction: column;
+
+            .user-name {
+                font-size: 14px;
+            }
+        }
+    
         .password-field {
             display: flex;
             flex-direction: column;
+
+            .password {
+                font-size: 14px;
+            }
+        }
+
+        .btns {
+
+            display: flex;
+            
+
+            .btn-signup {
+                display: flex;
+                padding: 5%;
+                border-radius: 24%;
+                justify-content: space-around;
+                font-family: 'RawlineRegular';
+                font-style: normal;
+                font-weight: 400;
+            }
+
+            .btn-continue {
+                display: flex;
+                padding: 5%;
+                border-radius: 24%;
+                justify-content: space-around;
+                font-family: 'RawlineRegular';
+                font-style: normal;
+                font-weight: 400;
+            }
         }
     }
 }
