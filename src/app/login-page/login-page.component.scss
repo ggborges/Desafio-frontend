@@ -1,0 +1,40 @@
+@import url("https://fontlibrary.org//face/rawline");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'RawlineRegular';
+    font-style: normal;
+    font-weight: 400;
+    color: #272626;
+
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.login-area {
+
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        padding-left: 4%;
+        padding-top: 3%;
+    }
+
+    .form-login {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        padding-right: 5%;
+
+        .password-field {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
