@@ -34,6 +34,22 @@ body {
         .links-acesso {
             display: flex;
             gap: 1em;
+            
+            a {
+                font-family: 'RawlineRegular';
+                font-style: normal;
+                text-decoration: none;
+                color: #1351B4;
+            }
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #407ad8;
+                text-decoration: underline;
+            }
         }
     }
     
@@ -45,30 +61,31 @@ body {
         padding: 1% 5% 0% 5%;
     
         .icon-and-title {
-            
+
             .title{
                 
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-;
+                justify-content: flex-end;
 
                 .title-header {
+                    margin: 0px;
                     font-family: 'RawlineRegular';
                     font-style: normal;
                     font-weight: 400;
                     font-size: 24.19px;
                     line-height: 33px;
-                    color: var(--bluetext);
+                    color: #1351B4;
                     
                 }
         
                 .subtitle-header {
+                    margin: 2% 0% 15% 0%;
                     font-family: 'RawlineRegular';
                     font-style: normal;
-                    font-weight: 400;
                     font-size: 14px;
                     line-height: 19px;
-                    color: var(--graytext)
+                    color: #555555;
                 }
             }
 
