@@ -9,6 +9,9 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
 
+  isLogged = false;
+  clientName = '';
+
   ngOnInit(): void {
   }
 

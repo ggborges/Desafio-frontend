@@ -1,20 +1,20 @@
 <div class="title">
     <h1>Cadastro do Usuário</h1>
 </div>
-
-<section class="form-signup">
+<!-- Forms para SignUp --- formGroup => signupForm -->
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit" class="form-signup">
     <label for="user-name">Nome de usuário</label>
-    <input type="text" id="user-name" name="user-name" value="Escolha o seu nome de usuário">
+    <input formControlName="nome" type="text" id="user-name" name="user-name" placeholder="Escolha o seu nome de usuário" required>
 
-    <label>Email</label>
-    <input type="email" name="email" value="Digite o seu email">
+    <label for="email">Email</label>
+    <input formControlName="email" type="email" id="email" name="email" placeholder="Digite o seu email" required>
 
-    <label>Confirme o seu Email</label>
-    <input type="email" name="confirm-email" value="Digite novamente o seu email">
+    <label for="confirm-email">Confirme o seu Email</label>
+    <input formControlName="cemail" type="email" id="confirm-email" name="confirm-email" placeholder="Digite novamente o seu email" required>
 
-    <label>Instituição</label>
-    <input type="text" name="instituicao" value="Digite o nome da sua instituição">
-    <!-- Fazer input de select para Cargo -->
+    <label for="instituicao">Instituição</label>
+    <input formControlName="instituicao" type="text" id="instituicao" name="instituicao" placeholder="Digite o nome da sua instituição" required>
+    <!-- Select para Cargo -->
     <label for="cargos">Cargo</label>
     <select id="cargos">
         <option value="" selected disabled hidden>Selecione...</option>
@@ -24,15 +24,20 @@
         <option value="Pleno">Pleno</option>
     </select>
 
-    <label>Senha</label>
-    <input type="text" name="senha" value="Escolha uma senha">
-
-    <label>Confirme a sua Senha</label>
-    <input type="text" name="confirme-senha" value="Digite novamente a senha escolhida">
+    <label for="senha">Senha</label>
+    <input formControlName="senha" type="text" id="senha" placeholder="Escolha uma senha" required>
+    
+    <div class="mostrar-senha-div">
+        <input type="checkbox" id="show-hide-pass" onclick="myFunction()"> 
+        <label for="show-hide-pass">Mostrar senha</label>    
+    </div>
+    
+    <label for="confirme-senha">Confirme a sua Senha</label>
+    <input formControlName="csenha" type="text" id="confirme-senha" name="confirme-senha" placeholder="Digite novamente a senha escolhida" required>
     
     <div class="check">
-        <input type="checkbox" id="check" name="termos">
-        <label for="check">Aceito o <a href="">Termos de Uso e Política de Privacidade</a></label>    
+        <input type="checkbox" id="check" name="termos" required>
+        <label class="termos" for="check">Aceito o <a href="">Termos de Uso e Política de Privacidade</a></label>    
     </div>
     
     
@@ -41,4 +46,4 @@
         <button type="submit" class="continuar">Continuar</button>    
     </div>
     
-</section>
+</form>

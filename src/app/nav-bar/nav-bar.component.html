@@ -6,8 +6,9 @@
         <img src="../../assets/earth-globe-icon.png" alt="Icon" class="icon-nav">
 
         <div class="links-acesso">
+            <p *ngIf="isLogged" id="nav-name">{{clientName}}</p>
             <!-- Link de acesso 1 -->
-            <a [routerLink]="['']" class="links">Login</a>
+            <a *ngIf="!isLogged" [routerLink]="['']" class="links">Login</a>
             <!-- Link de acesso 2 -->
             <a [routerLink]="['/signup']" class="links">Sign Up</a>
             <!-- Link de acesso 3 -->

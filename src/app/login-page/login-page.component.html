@@ -7,26 +7,24 @@
         <img src="../../assets/earth-globe-icon.png" alt="icon-login">
     </div>    
     <!-- Caixa de Log In -->
-    <div class="form-login">
+    <form [formGroup]="loginForm" class="form-login">
         <p class="text-login">Identifique-se com:</p>
 
         <section class="name-field">
             <p class="user-name">Nome de Usuário</p>
-            <input type="text" name="user-name" value="Digite o seu nome de usuário">    
+            <input formGroupControl="nome" type="text" class="input-name" name="user-name" placeholder="Digite o seu nome de usuário">    
         </section>
         
         <section class="password-field">
             <p class="password">Senha</p>
-            <div>
-                <input type="text" name="pass-user" value="Digite a sua senha atual">
-            </div>
+            <input formGroupControl="senha" type="text" class="input-pass"name="pass-user" placeholder="Digite a sua senha atual">
             <a href="" class="forget-pass">Esqueci minha senha</a>    
         </section>
         
         <section class="btns">
             <button type="button" [routerLink]="['/signup']" class="btn-signup">Cadastre-se</button>
-            <button type="" class="btn-continue">Continuar</button>    
+            <button type="submit" class="btn-continue">Continuar</button>    
         </section>
         
-    </div>
+    </form>
 </section>

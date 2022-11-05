@@ -24,12 +24,26 @@ label {
     color: #0c0c0c;
 }
 
+
+
 .form-signup {
     display: flex;
     flex-direction: column;
     border-style: groove;
     margin: 5% 25% 5% 25%;
     padding: 5%;
+
+    .termos {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .mostrar-senha-div {
+
+        label {
+            font-size: 12px;
+        }
+    }
 
     .btns {
         display: flex;
