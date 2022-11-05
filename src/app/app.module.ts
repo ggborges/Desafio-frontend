@@ -8,13 +8,15 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     LoginPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
