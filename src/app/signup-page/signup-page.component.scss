@@ -29,14 +29,9 @@ label {
 .form-signup {
     display: flex;
     flex-direction: column;
-    border-style: groove;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 5% 25% 5% 25%;
-    padding: 5%;
-
-    .termos {
-        font-weight: 400;
-        font-size: 12px;
-    }
+    padding: 2% 4% 3% 4%;
     
     .mostrar-senha-div {
 
@@ -45,9 +40,86 @@ label {
         }
     }
 
+    .field {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+
+    }
+
+    .termos-field {
+
+        margin-top: 5%;
+
+        .termos {
+            font-weight: 400;
+            font-size: 12px;
+            margin-left: 1%;
+        }
+    }
+
     .btns {
         display: flex;
         justify-content: flex-end;
-        margin-top: 10%;
+        margin-top: 7%;
+
+        .btn-cancel {
+            display: flex;
+            padding: 2%;
+            margin-right: 4%;
+            border-radius: 10vw;
+            justify-content: space-around;
+            font-family: 'RawlineRegular';
+            font-style: normal;
+            font-weight: 700;
+            background-color: #FFFFFF;
+            border-color: #1351B4;
+            border-style: solid;
+            border-width: 1px;
+
+
+            height: 2%;
+            width: 30%;
+
+            p {
+                
+                color: #1351B4;
+            }
+        }
+
+        .btn-cancel:hover {
+            background-color: #3969b8;
+            border-color: #3969b8;
+
+            p {
+                color: #FFFFFF;
+            }
+        }
+
+        .btn-continue {
+            display: flex;
+            padding: 2%;
+            border-radius: 10vw;
+            justify-content: space-around;
+            font-family: 'RawlineRegular';
+            font-style: normal;
+            font-weight: 700;
+            background-color: #1351B4;
+            border-style: solid;
+            border-color: #1351B4;
+            
+
+            height: 2%;
+            width: 30%;
+
+            p {
+                color: #FFFFFF;
+            }
+        }
+
+        .btn-continue:hover {
+            background-color: #3969b8;
+            border-color: #3969b8;
+        }
     }
 }
