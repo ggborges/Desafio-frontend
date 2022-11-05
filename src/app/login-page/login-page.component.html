@@ -8,6 +8,7 @@
     </div>    
     <!-- Caixa de Log In -->
     <form [formGroup]="loginForm" class="form-login">
+        
         <p class="text-login">Identifique-se com:</p>
 
         <section class="name-field">
@@ -22,8 +23,8 @@
         </section>
         
         <section class="btns">
-            <button type="button" [routerLink]="['/signup']" class="btn-signup">Cadastre-se</button>
-            <button type="submit" class="btn-continue">Continuar</button>    
+            <button type="button" [routerLink]="['/signup']" class="btn-signup"><strong>Cadastre-se</strong></button>
+            <button type="submit" class="btn-continue"><strong>Continuar</strong></button>    
         </section>
         
     </form>

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+// Título "Login de Usuário"
 h1 {
     font-family: 'RawlineRegular';
     font-style: normal;
@@ -21,44 +21,53 @@ h1 {
     justify-content: space-between;
     
     
-
+    // Imagem
     .image {
         padding-left: 8%;
         padding-top: 1%;
         width: 60%;
         height: 60%;
     }
-
+    // Forms para login
     .form-login {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: 3% 5% 10% 7%;
-        padding: 5% 10% 5% 10%;
-        box-shadow: 2px 4px 2px -2px gray;
+        margin: 2% 5% 10% 7%;
+        height: 100%;
+        width: 40%;
+        padding: 5% 2% 2% 2%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        //box-shadow: 2px 4px 2px -2px gray;
+        //border-left-style: inherit;
+        //border-left-color: #7c7c7c;
 
         p {
             font-family: 'RawlineRegular';
             font-style: normal;
             font-weight: 700;
         }
-
+        // Título "Identifique-se com"
         .text-login {
             font-size: 20px;
+            padding-right: 25%;
+            padding-left: 25%;
         }
-
+        // label e input para usuário
         .name-field {
             display: flex;
             flex-direction: column;
+            margin-top: 10%;
 
             .user-name {
                 font-size: 14px;
             }
         }
-    
+        // label e input para senha
         .password-field {
             display: flex;
             flex-direction: column;
+            margin-top: 5%;
 
             a {
                 font-family: 'RawlineRegular';
@@ -70,30 +79,69 @@ h1 {
                 font-size: 14px;
             }
         }
-
+        // Botões de cadastre-se e login
         .btns {
 
             display: flex;
+            justify-content: space-around;
+            margin-top: 5%;
             
-
             .btn-signup {
                 display: flex;
-                padding: 5%;
-                border-radius: 24%;
+                padding: 2%;
+                border-radius: 10vw;
                 justify-content: space-around;
                 font-family: 'RawlineRegular';
                 font-style: normal;
                 font-weight: 400;
+                background-color: #FFFFFF;
+                border-color: #1351B4;
+                border-style: solid;
+
+
+                height: 2%;
+                width: 40%;
+
+                strong {
+                    font-weight: 400;
+                    color: #1351B4;
+                }
+            }
+
+            .btn-signup:hover {
+                background-color: #3969b8;
+                border-color: #3969b8;
+
+                strong {
+                    color: #FFFFFF;
+                }
             }
 
             .btn-continue {
                 display: flex;
-                padding: 5%;
-                border-radius: 24%;
+                padding: 2%;
+                border-radius: 10vw;
                 justify-content: space-around;
                 font-family: 'RawlineRegular';
                 font-style: normal;
                 font-weight: 400;
+                background-color: #1351B4;
+                border-style: solid;
+                border-color: #1351B4;
+                
+
+                height: 2%;
+                width: 40%;
+
+                strong {
+                    font-weight: 400;
+                    color: #FFFFFF;
+                }
+            }
+
+            .btn-continue:hover {
+                background-color: #3969b8;
+                border-color: #3969b8;
             }
         }
     }
