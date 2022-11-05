@@ -93,17 +93,18 @@ h1 {
                 justify-content: space-around;
                 font-family: 'RawlineRegular';
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 background-color: #FFFFFF;
                 border-color: #1351B4;
                 border-style: solid;
+                border-width: 1px;
 
 
                 height: 2%;
                 width: 40%;
 
-                strong {
-                    font-weight: 400;
+                p {
+                    
                     color: #1351B4;
                 }
             }
@@ -112,7 +113,7 @@ h1 {
                 background-color: #3969b8;
                 border-color: #3969b8;
 
-                strong {
+                p {
                     color: #FFFFFF;
                 }
             }
@@ -124,7 +125,7 @@ h1 {
                 justify-content: space-around;
                 font-family: 'RawlineRegular';
                 font-style: normal;
-                font-weight: 400;
+                font-weight: 700;
                 background-color: #1351B4;
                 border-style: solid;
                 border-color: #1351B4;
@@ -133,8 +134,7 @@ h1 {
                 height: 2%;
                 width: 40%;
 
-                strong {
-                    font-weight: 400;
+                p {
                     color: #FFFFFF;
                 }
             }
