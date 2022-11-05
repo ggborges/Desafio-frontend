@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-signup-page',
@@ -7,9 +8,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./signup-page.component.scss']
 })
 export class SignupPageComponent implements OnInit {
-
-  constructor(private formBuilder: FormBuilder) { }
-
+  
   signupForm = this.formBuilder.group({
     nome: '',
     email: '',
@@ -20,11 +19,27 @@ export class SignupPageComponent implements OnInit {
     csenha: '' // confirm senha
   })
 
+  constructor(private router: Router, private formBuilder: FormBuilder) { }
+
   ngOnInit(): void {
   }
 
-  onSubmit(): void {
+  navigate_to_login(): void {
+    console.log('entrou navigate_to_login')
+    this.router.navigate([''])
+  }
+
+  onSubmit() {
+    this.navigate_to_login()
+    console.log('entrou onSubmit')
+    if (this.signupForm.valid) {
+      console.log("Form Submitted!");
+    }
+    let nome = this.signupForm.get('nome')!.value
+    console.log(nome)
+    localStorage.setItem(nome!, JSON.stringify(this.signupForm.value))
     this.signupForm.reset()
+    //console.log(localStorage.getItem(nome!))
   }
 
 }

@@ -2,7 +2,7 @@
     <h1>Cadastro do Usuário</h1>
 </div>
 <!-- Forms para SignUp --- formGroup => signupForm -->
-<form [formGroup]="signupForm" (ngSubmit)="onSubmit" class="form-signup">
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form-signup">
     <label for="user-name">Nome de usuário</label>
     <input formControlName="nome" type="text" id="user-name" name="user-name" placeholder="Escolha o seu nome de usuário" required>
 
@@ -16,7 +16,7 @@
     <input formControlName="instituicao" type="text" id="instituicao" name="instituicao" placeholder="Digite o nome da sua instituição" required>
     <!-- Select para Cargo -->
     <label for="cargos">Cargo</label>
-    <select id="cargos">
+    <select id="cargos" formControlName="cargo">
         <option value="" selected disabled hidden>Selecione...</option>
         <option value="Estagiário">Estagiário</option>
         <option value="Júnior">Júnior</option>
@@ -28,7 +28,7 @@
     <input formControlName="senha" type="text" id="senha" placeholder="Escolha uma senha" required>
     
     <div class="mostrar-senha-div">
-        <input type="checkbox" id="show-hide-pass" onclick="myFunction()"> 
+        <input type="checkbox" id="show-hide-pass" onclick="show_hide()"> 
         <label for="show-hide-pass">Mostrar senha</label>    
     </div>
     
@@ -42,8 +42,8 @@
     
     
     <div class="btns">
-        <button type="button" class="cancelar">Cancelar</button>
-        <button type="submit" class="continuar">Continuar</button>    
+        <button type="button" (click)="navigate_to_login()" class="cancelar">Cancelar</button>
+        <button type="submit"  class="continuar">Continuar</button>    
     </div>
     
 </form>
