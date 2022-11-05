@@ -16,8 +16,6 @@ body {
     gap: 5%;
     box-shadow: 0 4px 2px -2px gray;
     padding-top: 1%;
-    
-    
 
     .nav-top {
         display: flex;
@@ -63,7 +61,6 @@ body {
         .icon-and-title {
 
             .title{
-                
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -76,9 +73,8 @@ body {
                     font-size: 24.19px;
                     line-height: 33px;
                     color: #1351B4;
-                    
                 }
-        
+
                 .subtitle-header {
                     margin: 2% 0% 15% 0%;
                     font-family: 'RawlineRegular';
@@ -88,7 +84,19 @@ body {
                     color: #555555;
                 }
             }
-
+        }
+        .search-div{
+            margin-right: 21%;
+            width: 10%;
+            .search {
+                padding: 10%;
+                width: 290%;
+                border-radius: 0.7vw;
+                border-style: none;
+                font-family: 'RawlineRegular';
+                font-style: italic;
+                background-color: #f0f0f0;
+            }
         }
     }
     
