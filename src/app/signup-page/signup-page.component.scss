@@ -12,8 +12,8 @@
 
     font-family: 'RawlineRegular';
     font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
+    font-weight: lighter;
+    font-size: 1.5vw;
 }
 
 label {
@@ -22,9 +22,8 @@ label {
     font-weight: 700;
     font-size: 14px;
     color: #0c0c0c;
+    margin-bottom: 1%;
 }
-
-
 
 .form-signup {
     display: flex;
@@ -32,38 +31,44 @@ label {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     margin: 5% 25% 5% 25%;
-    padding: 2% 4% 3% 4%;
-    
+    padding: 2% 4% 3% 4%;   
+    // Formatação para os inputs de texto e select
+    input, select{
+        padding: 1.5%;
+        border-radius: 0.5vw;
+        border-width: 2px;
+        border-style: ridge;
+        font-family: 'RawlineRegular';
+        font-style: italic;
+    }
     .mostrar-senha-div {
-
+        margin-top: 1%;
+        margin-left: 1%;
         label {
+            margin-left: 1%;
             font-size: 12px;
         }
     }
-
     .field {
         display: flex;
         flex-direction: column;
         margin-top: 5%;
-
     }
-
+    // Campo para o checkbox de "Aceito os Termos"
     .termos-field {
-
         margin-top: 5%;
-
+        margin-left: 1%;
         .termos {
             font-weight: 400;
             font-size: 12px;
             margin-left: 1%;
         }
     }
-
+    // Botões de cancelar e continuar
     .btns {
         display: flex;
         justify-content: flex-end;
-        margin-top: 7%;
-
+        margin-top: 5%;
         .btn-cancel {
             display: flex;
             padding: 2%;
@@ -78,25 +83,20 @@ label {
             border-style: solid;
             border-width: 1px;
 
-
             height: 2%;
             width: 30%;
-
             p {
                 
                 color: #1351B4;
             }
         }
-
         .btn-cancel:hover {
             background-color: #3969b8;
             border-color: #3969b8;
-
             p {
                 color: #FFFFFF;
             }
         }
-
         .btn-continue {
             display: flex;
             padding: 2%;
@@ -107,17 +107,14 @@ label {
             font-weight: 700;
             background-color: #1351B4;
             border-style: solid;
-            border-color: #1351B4;
-            
+            border-color: #1351B4;            
 
             height: 2%;
             width: 30%;
-
             p {
                 color: #FFFFFF;
             }
         }
-
         .btn-continue:hover {
             background-color: #3969b8;
             border-color: #3969b8;

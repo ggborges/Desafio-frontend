@@ -42,7 +42,15 @@ h1 {
         //box-shadow: 2px 4px 2px -2px gray;
         //border-left-style: inherit;
         //border-left-color: #7c7c7c;
-
+        // Formatação para os inputs de texto e select
+        input, select{
+            padding: 1.5%;
+            border-radius: 0.5vw;
+            border-width: 2px;
+            border-style: ridge;
+            font-family: 'RawlineRegular';
+            font-style: italic;
+        }
         p {
             font-family: 'RawlineRegular';
             font-style: normal;
@@ -74,6 +82,7 @@ h1 {
                 font-family: 'RawlineRegular';
                 font-style: normal;
                 font-size: 14px;
+                margin-left: 0.5%;
             }
 
             .password {
