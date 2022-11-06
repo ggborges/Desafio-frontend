@@ -4,13 +4,15 @@
 <section class="nav">
     <section class="nav-top">
         <img src="../../assets/earth-globe-icon.png" alt="Icon" class="icon-nav">
-
+        
         <div class="links-acesso">
-            <p *ngIf="isLogged" id="nav-name">{{clientName}}</p>
+            <p *ngIf="isLoggedIn()" id="nav-name" class="user-name">{{clientName}}</p>
+            <a *ngIf="isLoggedIn()" href="" (click)="logout()" class="links">Log Out</a>
+            <a *ngIf="isLoggedIn()" href="" class="links">Perfil</a>
             <!-- Link de acesso 1 -->
-            <a *ngIf="!isLogged" [routerLink]="['']" class="links">Login</a>
+            <a *ngIf="!isLoggedIn()" href="" class="links">Login</a>
             <!-- Link de acesso 2 -->
-            <a [routerLink]="['/signup']" class="links">Sign Up</a>
+            <a *ngIf="!isLoggedIn()" href="/signup" class="links">Sign Up</a>
             <!-- Link de acesso 3 -->
             <a href="toHomePageComponent" class="links">Home</a>
             <!-- Link de acesso 4 -->

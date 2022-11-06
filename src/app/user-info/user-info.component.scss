@@ -1,0 +1,104 @@
+@import url("https://fontlibrary.org//face/rawline");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2% 5% 10% 0%;
+    height: 80%;
+    width: 150%;
+    padding: 5% 2% 2% 2%;
+    //box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    //box-shadow: 2px 4px 2px -2px gray;
+    //border-left-style: inherit;
+    //border-left-color: #7c7c7c;
+    // Formatação para os inputs de texto e select
+    p, label {
+        font-family: 'RawlineRegular';
+        font-style: normal;
+        font-weight: 700;
+    }
+    // Título "Identifique-se com"
+    .text-info {
+        font-family: 'RawlineRegular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        padding-right: 25%;
+        padding-left: 25%;
+    }
+    // label e input para usuário
+    .field {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10%;
+
+        .user-name {
+            font-size: 14px;
+        }
+    }
+    // label e input para senha
+    .password-field {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+
+        a {
+            font-family: 'RawlineRegular';
+            font-style: normal;
+            font-size: 14px;
+            margin-left: 0.5%;
+            color: #1351B4;
+        }
+
+        .password {
+            font-size: 14px;
+        }
+    }
+    // Botões de cadastre-se e login
+    .btn {
+
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10%;
+        
+        .btn-logout {
+            display: flex;
+            padding: 5%;
+            border-radius: 10vw;
+            justify-content: space-around;
+            font-family: 'RawlineRegular';
+            font-style: normal;
+            font-weight: 700;
+            background-color: #FFFFFF;
+            border-color: #1351B4;
+            border-style: solid;
+            border-width: 1px;
+
+
+            height: 2%;
+            width: 40%;
+
+            p {
+                padding-bottom: 2%;
+                color: #1351B4;
+            }
+        }
+
+        .btn-logout:hover {
+            background-color: #3969b8;
+            border-color: #3969b8;
+
+            p {
+                color: #FFFFFF;
+            }
+        }
+    }
+}

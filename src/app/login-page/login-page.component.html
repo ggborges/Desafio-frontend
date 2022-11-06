@@ -7,7 +7,7 @@
         <img src="../../assets/earth-globe-icon.png" alt="icon-login" class="image">
     </div>    
     <!-- Caixa de Log In -->
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-login">
+    <form *ngIf="!isLogged()" [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-login">
         
         <p class="text-login">Identifique-se com:</p>
 
@@ -24,8 +24,9 @@
         
         <section class="btns">
             <button type="button" (click)="navigate_to_signup_page()" class="btn-signup"><p>Cadastre-se</p></button>
-            <button type="submit" class="btn-continue"><p>Continuar</p></button>    
+            <button type="submit" (click)="navigate_to_login_page()" class="btn-continue"><p>Continuar</p></button>    
         </section>
         
     </form>
+    <app-user-info *ngIf="isLogged()" class="login-area" id="info-login"></app-user-info>
 </section>

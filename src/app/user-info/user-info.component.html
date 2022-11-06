@@ -1,0 +1,28 @@
+<section class="login-info">
+    <!-- Caixa de Log In -->        
+    <h2 class="text-info">Informações do Usuário</h2>
+
+    <section class="field">
+        <label for="user-name" class="user-name">Nome de Usuário:</label>
+        <p class="name" id="user-name">{{clientName}}</p>    
+    </section>
+        
+     <section class="field">
+        <label for="user-email" class="email">E-mail:</label>
+        <p class="email" id="user-email">{{email}}</p>  
+    </section>
+
+    <section class="field">
+        <label for="user-email" class="email">Instituicao:</label>
+        <p class="email" id="user-email">{{instituicao}}</p>  
+    </section>
+
+    <section class="field">
+        <label for="user-email" class="email">Cargo:</label>
+        <p class="email" id="user-email">{{cargo}}</p>  
+    </section>
+
+    <section class="btn">
+        <button type="button" (click)="logout()" class="btn-logout"><p>Log Out</p></button>
+    </section>
+</section>

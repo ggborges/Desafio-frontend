@@ -31,7 +31,19 @@ body {
         
         .links-acesso {
             display: flex;
+            align-items: baseline;
             gap: 1em;
+
+            p {
+                font-family: 'RawlineRegular';
+                font-style: normal;
+                //font-size: 12px;
+                font-weight: 700;
+                text-decoration: none;
+                background-color: #407ad8;
+                border-radius: 0.5vw;
+                color: #ffffff;
+            }
             
             a {
                 font-family: 'RawlineRegular';

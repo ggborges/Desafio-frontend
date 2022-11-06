@@ -27,6 +27,17 @@ export class LoginPageComponent implements OnInit {
     this.router.navigate([''])
   }
 
+  isLogged() : boolean{
+    let isLogged = false
+    let currentUser = JSON.parse(sessionStorage.getItem('currentUser')!)
+  
+    if (currentUser != null) {
+      isLogged = true
+    }
+
+    return isLogged
+  }
+
   onSubmit() {
 
     console.log(this.loginForm)
@@ -44,24 +55,28 @@ export class LoginPageComponent implements OnInit {
       if (data != null){
         // Se o usuário e a senha digitados correspondem ao cadastrado
         if (data.nome == nome && data.senha == this.loginForm.get('senha')?.value){
-          sessionStorage.setItem(nome, data) // efetua o login
+          sessionStorage.setItem('currentUser', JSON.stringify(data)) // efetua o login
           console.log('Login efetuado com sucesso!')
+          console.log('is logged: ', this.isLogged())
           this.loginForm.reset()
           this.navigate_to_login_page()
         } else {
           console.log('Usuário ou senha inválidos')
+          console.log('is logged: ', this.isLogged())
 
           // Usário ou senha inválidos [lançar erro]
 
         }        
       } else {
         console.log('Usuário não cadastrado')
+        console.log('is logged: ', this.isLogged())
 
         // Usuário não cadastrado [lançar erro]
 
       }
     } else {
       console.log('Formulário não foi preenchido corretamente')
+      console.log('is logged: ', this.isLogged())
 
       // Formulário não foi preenchido corretamente [lançar erro]
 
