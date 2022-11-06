@@ -7,23 +7,23 @@
         <img src="../../assets/earth-globe-icon.png" alt="icon-login" class="image">
     </div>    
     <!-- Caixa de Log In -->
-    <form [formGroup]="loginForm" class="form-login">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-login">
         
         <p class="text-login">Identifique-se com:</p>
 
         <section class="name-field">
-            <p class="user-name">Nome de Usuário</p>
-            <input formGroupControl="nome" type="text" class="input-name" name="user-name" placeholder="Digite o seu nome de usuário">    
+            <label for="user-name" class="user-name">Nome de Usuário</label>
+            <input formControlName="nome" type="text" class="input-name" id="user-name" name="user-name" placeholder="Digite o seu nome de usuário" required>    
         </section>
         
         <section class="password-field">
-            <p class="password">Senha</p>
-            <input formGroupControl="senha" type="password" class="input-pass"name="pass-user" placeholder="Digite a sua senha atual">
+            <label for="user-pass" class="password">Senha</label>
+            <input formControlName="senha" type="password" class="input-pass" id="user-pass" name="pass-user" placeholder="Digite a sua senha atual" required>
             <a href="" class="forget-pass">Esqueci minha senha</a>    
         </section>
         
         <section class="btns">
-            <button type="button" [routerLink]="['/signup']" class="btn-signup"><p>Cadastre-se</p></button>
+            <button type="button" (click)="navigate_to_signup_page()" class="btn-signup"><p>Cadastre-se</p></button>
             <button type="submit" class="btn-continue"><p>Continuar</p></button>    
         </section>
         

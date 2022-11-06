@@ -8,8 +8,5 @@ if (environment.production) {
   enableProdMode();
 }
 
-localStorage.removeItem('Gustavo')
-localStorage.clear()
-
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
